@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP.NET6\\ToDo\\ToDo.csproj": {}
+    "F:\\ASP.NET6\\ToDo\\Todo.csproj": {}
   },
   "projects": {
-    "F:\\ASP.NET6\\ToDo\\ToDo.csproj": {
+    "F:\\ASP.NET6\\ToDo\\Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP.NET6\\ToDo\\ToDo.csproj",
-        "projectName": "ToDo",
-        "projectPath": "F:\\ASP.NET6\\ToDo\\ToDo.csproj",
+        "projectUniqueName": "F:\\ASP.NET6\\ToDo\\Todo.csproj",
+        "projectName": "Todo",
+        "projectPath": "F:\\ASP.NET6\\ToDo\\Todo.csproj",
         "packagesPath": "C:\\Users\\lj133\\.nuget\\packages\\",
         "outputPath": "F:\\ASP.NET6\\ToDo\\obj\\",
         "projectStyle": "PackageReference",

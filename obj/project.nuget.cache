@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NCOqWut3CAhB50zdNJjCChWR0Doa4PTkh6IEaoBTcc0vRu/UEzxEuQvIM2JNSV9NQ/g2gqI3yGCklKVYtO4Pjw==",
+  "dgSpecHash": "e9LdimX/nIdYsmTQwQ7kEEp6F+UlqAdnDe/ldDn+rc7M9aLs39nB5SeRnZplBqKeyxia96e/oWyAeWj0Y2gQcQ==",
   "success": true,
-  "projectFilePath": "F:\\ASP.NET6\\ToDo\\ToDo.csproj",
+  "projectFilePath": "F:\\ASP.NET6\\ToDo\\Todo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

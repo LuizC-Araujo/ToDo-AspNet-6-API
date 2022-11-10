@@ -14,6 +14,15 @@ namespace Todo.Controllers
             return context.Todos.ToList();
         }
 
+        [HttpGet]
+        [Route("/{id:int}")]
+        public TodoModel GetById(
+            [FromRoute] int id, 
+            [FromServices] AppDbContext context)
+        {
+            return context.Todos.FirstOrDefault(x => x.Id == id);
+        }
+
         [HttpPost]
         [Route("/")]
         public TodoModel Post(
@@ -24,6 +33,39 @@ namespace Todo.Controllers
             context.SaveChanges();
 
             return todo;
+        }
+
+        [HttpPut]
+        [Route("/")]
+        public TodoModel Put(
+            [FromRoute] int id,
+            [FromBody] TodoModel todo,
+            [FromServices] AppDbContext context)
+        {
+            var model = context.Todos.FirstOrDefault(x => x.Id == id);
+            if (model == null)
+                return null;
+
+            model.Title = todo.Title;
+            model.Done = todo.Done;
+
+            context.Todos.Update(model);
+            context.SaveChanges();
+
+            return model;
+        }
+
+        [HttpDelete]
+        [Route("/")]
+        public string Delete(
+            [FromRoute] int id,
+            [FromServices] AppDbContext context)
+        {
+            var model = context.Todos.FirstOrDefault(x => x.Id == id);
+            context.Todos.Remove(model);
+            context.SaveChanges();
+
+            return "Item removido com sucesso!";
         }
     }
 }
